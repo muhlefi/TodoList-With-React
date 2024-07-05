@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import TodoItem from "./TodoItem";
+import TodoItem from "../TodoItem/TodoItem";
 import { Box ,Em } from "@radix-ui/themes";
 
 const TodoList = () => {

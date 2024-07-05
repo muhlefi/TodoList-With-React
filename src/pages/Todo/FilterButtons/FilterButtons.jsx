@@ -1,7 +1,7 @@
 // FilterButtons.jsx
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterTodos, markAllCompleted } from "../redux/actions";
+import { filterTodos, markAllCompleted } from "../../../dataservices/actions";
 import { Flex, Button, Select } from "@radix-ui/themes";
 
 const FilterButtons = () => {

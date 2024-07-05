@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { toggleTodo, removeTodo, markCompleted, markIncomplete } from "../redux/actions";
+import { toggleTodo, removeTodo, markCompleted, markIncomplete } from "../../../dataservices/actions";
 import { FaToggleOn, FaToggleOff, FaTrash, FaCheck, FaTimes } from "react-icons/fa";
 import { Flex, Text, Button } from "@radix-ui/themes";
 
@@ -7,7 +7,7 @@ const TodoItem = ({ todo, index }) => {
   const dispatch = useDispatch();
 
   return (
-    <Flex justify='between' className="border-b-2 py-2 gap-4">
+    <Flex justify='between' py='2' gap='4' className="border-b-2">
       <Flex align='center'>
         <Text size="sm" className="mr-4 text-gray-500">
           {index + 1}.
